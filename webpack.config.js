@@ -1,5 +1,6 @@
 const path = require('path');
 const WebpackShellPlugin = require('webpack-shell-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 const OUTPUT_FOLDER = 'dist';
 
@@ -7,6 +8,8 @@ const config = {
   entry: './src/index.ts',
   devtool: 'inline-source-map',
   plugins: [],
+  target: "node",
+  externals: [nodeExternals()],
   module: {
     rules: [
       {
