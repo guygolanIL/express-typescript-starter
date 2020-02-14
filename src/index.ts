@@ -3,7 +3,7 @@ import schedule from 'node-schedule';
 const port = 4000;
 const server = new Server();
 
-const fetchDataRule = '*/5 * * * *';
+const fetchDataRule = '* */5 * * * *';
 const job = schedule.scheduleJob('Fetch data', fetchDataRule, () => {
     console.log('fetching data');
 });
