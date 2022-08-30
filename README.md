@@ -1,6 +1,6 @@
 # Use this starter to bootstrap an express + graphql + prisma backend with TS
 
-## db - config a db (locally or provisioned in the cloud via railway or heroku). 
+## db - config a db (locally or provisioned in the cloud via railway or similar). 
 1. update schema.prisma with your provider
 ```prisma
 datasource db {
